@@ -1,35 +1,31 @@
 <template>
-    <div class="my_introduction">
-        <v-parallax
-            dark
-            src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+    <div id="top">
+        <div id="main">
+            <vue-typer 
+            :text="['Hello.\nMy name is Ikuto Hongu.\n Thank you for visiting this site. \nNow scroll down.\n\n\n↓\n']"
+            :repeat='0'
+            :preTypeDelay="1000" 
+            :typeDelay="120" 
+            :preEraseDelay="5000" 
+            :eraseDelay="2000">
+            </vue-typer>
+        </div>
+        <vue-particles 
+        color="#dedede" 
+        class="particles"
         >
-            <v-row
-            align="center"
-            justify="center"
-            >
-            <v-col
-                class="text-center"
-                cols="12"
-            >
-                <h1 class="text-h4 font-weight-thin mb-4">
-                <vue-typer text="Ikuto Hongu's Portfolio"></vue-typer>
-                </h1>
-                <h4 class="subheading">
-                -Web Engineer-
-                </h4>
-            </v-col>
-            </v-row>
-        </v-parallax>
+        </vue-particles>
     </div>
 </template>
 
 <script>
 import { VueTyper } from 'vue-typer'
+// import VueParticles from 'vue-particles'
 
 export default {
     components: {
-        'vue-typer': VueTyper
+        'vue-typer': VueTyper,
+        // 'vue-particles': VueParticles
     }
 
 }

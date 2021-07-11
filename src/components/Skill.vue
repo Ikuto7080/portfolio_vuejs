@@ -1,254 +1,68 @@
 <template>
   <div id="skill">
-      <v-container
-      >
-        <v-row
-        no-gutters
-        style="height: 150px"
-        >
-            <!-- HTML -->
-            <v-col>
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
+      <h1 class="text-center white--text">Skills</h1>
+     <v-container class="inner my_introduction white--text">
+        <div class="language_bg pa-5">
+            <v-row
+            class="mt-0"
+            justify="center"
+            align-content-lg="center"
+            >
+                <v-col
+                cols="4"
+                md="4"
+                xs="12"
+                class="pa-0 v_card_cont"
+                v-for="n of data"
+                :key="n"
                 >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/html-5.svg')"
-                    ></v-img>
-
-                    <v-card-title>HTML</v-card-title>
-
-                    <v-rating
-                    :value="4.5"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-                <!-- CSS -->
-            <v-col>
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/css-3.svg')"
-                    ></v-img>
-
-                    <v-card-title>CSS</v-card-title>
-
-                    <v-rating
-                    :value="4.5"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-            
-                <!-- Python -->
-            <v-col>
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/python.svg')"
-                    ></v-img>
-
-                    <v-card-title>Python</v-card-title>
-
-                    <v-rating
-                    :value="4.0"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-                <!-- Django -->
-            <v-col>
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/django-icon.svg')"
-                    ></v-img>
-
-                    <v-card-title>Django</v-card-title>
-
-                    <v-rating
-                    :value="4.5"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <!-- js -->
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/javascript.svg')"
-                    ></v-img>
-
-                    <v-card-title>Javascript</v-card-title>
-
-                    <v-rating
-                    :value="4.5"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-            <v-col>
-                <!-- Vue.js -->
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/vue.svg')"
-                    ></v-img>
-
-                    <v-card-title>Vue</v-card-title>
-
-                    <v-rating
-                    :value="5.0"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-            <v-col>
-                <!-- Vuetify -->
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/vuetifyjs.svg')"
-                    ></v-img>
-
-                    <v-card-title>Vuetify</v-card-title>
-
-                    <v-rating
-                    :value="5.0"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-            <v-col>
-                <!-- ruby -->
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/ruby.svg')"
-                    ></v-img>
-
-                    <v-card-title>Ruby</v-card-title>
-
-                    <v-rating
-                    :value="4.0"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <!-- rails -->
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/rails.svg')"
-                    ></v-img>
-
-                    <v-card-title>Rails</v-card-title>
-
-                    <v-rating
-                    :value="3.5"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-            <v-col>
-                <!-- PHP -->
-                <v-card class="mx-auto my-12"
-                outlined
-                max-width="374"
-                tile
-                >
-                    <v-img
-                    height="250"
-                    :src="require('@/assets/php-alt.svg')"
-                    ></v-img>
-
-                    <v-card-title>PHP</v-card-title>
-
-                    <v-rating
-                    :value="3.0"
-                    color="yellow darken-3"
-                    dense
-                    half-increments
-                    readonly
-                    ></v-rating>
-                </v-card>
-            </v-col>
-        </v-row>
+                    <v-card
+                    class="mt-12 mr-0"
+                    outlined
+                    max-width="150"
+                    height="200"
+                    tile
+                    >
+                        <div>
+                            <v-img
+                            class="mx-auto"
+                            style="width: 70px; height:auto;"
+                            :src="n.image"
+                            ></v-img>
+                            <v-card-text class="text-center">{{n.language}}</v-card-text>
+                            <v-rating
+                            :value="n.value"
+                            color="yellow darken-3 text-center"
+                            dense
+                            half-increments
+                            readonly
+                            ></v-rating>
+                        </div>
+                    </v-card>
+                </v-col>
+            </v-row>
+        </div>
       </v-container>
   </div>
 </template>
 
 <script>
 export default {
-
+    data(){
+        return {
+            data: [
+                {image: require('@/assets/html-5.svg'), language: "HTML", value: "4.5"},
+                {image: require('@/assets/css-3.svg'), language: "CSS", value: "4.5"},
+                {image: require('@/assets/python.svg'), language: "Python", value: "4.5"},
+                {image: require('@/assets/django-icon.svg'), language: "Django", value: "4.5"},
+                {image: require('@/assets/javascript.svg'), language: "Javascript", value: "4.5"},
+                {image: require('@/assets/vue.svg'), language: "Vue", value: "4.5"},
+                {image: require('@/assets/ruby.svg'), language: "Ruby", value: "4.0"},
+                {image: require('@/assets/rails.svg'), language: "Rails", value: "4.0"},
+                {image: require('@/assets/php-alt.svg'), language: "PHP", value: "3.5"},
+            ]
+        }
+    }
 }
 </script>
 
