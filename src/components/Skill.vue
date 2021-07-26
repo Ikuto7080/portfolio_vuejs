@@ -1,6 +1,6 @@
 <template>
   <div id="skill">
-      <h1 class="text-center white--text">Skills</h1>
+      <h1 class="text-center white--text text-h4">Skills</h1>
      <v-container class="inner my_introduction white--text">
         <div class="language_bg pa-5">
             <v-row
@@ -9,15 +9,18 @@
             align-content-lg="center"
             >
                 <v-col
-                cols="4"
-                md="4"
-                xs="12"
-                class="pa-0 v_card_cont"
+                cols="6"
+                sm="6"
+                md="6"
+                lg="3"
+                class=" v_card_cont"
                 v-for="n of data"
-                :key="n"
+                :key="n.language"
                 >
                     <v-card
-                    class="mt-12 mr-0"
+                    class="mt-12 mx-auto"
+                    justify="center"
+                    align-content="center"
                     outlined
                     max-width="150"
                     height="200"
@@ -51,15 +54,15 @@ export default {
     data(){
         return {
             data: [
-                {image: require('@/assets/html-5.svg'), language: "HTML", value: "4.5"},
-                {image: require('@/assets/css-3.svg'), language: "CSS", value: "4.5"},
-                {image: require('@/assets/python.svg'), language: "Python", value: "4.5"},
-                {image: require('@/assets/django-icon.svg'), language: "Django", value: "4.5"},
-                {image: require('@/assets/javascript.svg'), language: "Javascript", value: "4.5"},
-                {image: require('@/assets/vue.svg'), language: "Vue", value: "4.5"},
-                {image: require('@/assets/ruby.svg'), language: "Ruby", value: "4.0"},
-                {image: require('@/assets/rails.svg'), language: "Rails", value: "4.0"},
-                {image: require('@/assets/php-alt.svg'), language: "PHP", value: "3.5"},
+                {image: require('@/assets/html-5.svg'), language: "HTML", value: 4.5},
+                {image: require('@/assets/css-3.svg'), language: "CSS", value: 4.5},
+                {image: require('@/assets/python.svg'), language: "Python", value: 4.5},
+                {image: require('@/assets/django-icon.svg'), language: "Django", value: 4.5},
+                {image: require('@/assets/javascript.svg'), language: "Javascript", value: 4.5},
+                {image: require('@/assets/vue.svg'), language: "Vue", value: 4.5},
+                {image: require('@/assets/ruby.svg'), language: "Ruby", value: 4.0},
+                {image: require('@/assets/rails.svg'), language: "Rails", value: 4.0},
+                {image: require('@/assets/php-alt.svg'), language: "PHP", value: 3.5},
             ]
         }
     }

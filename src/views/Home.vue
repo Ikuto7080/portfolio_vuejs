@@ -3,8 +3,8 @@
       <Title></Title>
       <About></About>
       <Skill></Skill>
+      <Service></Service>
       <Work></Work>
-      <Contact></Contact>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ import Title from '../components/Title.vue'
 import About from '../components/About.vue'
 import Skill from '../components/Skill.vue'
 import Work from '../components/Work.vue'
-import Contact from '../components/Contact.vue'
+import Service from '../components/Service.vue'
 
 
 export default {
@@ -24,7 +24,7 @@ export default {
     About,
     Skill,
     Work,
-    Contact,
+    Service
   }
 }
 </script>

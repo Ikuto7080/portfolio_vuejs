@@ -7,7 +7,7 @@
       <div class="contact_text">
           <h3>ご依頼の（ご相談）はメールよりお願いします。</h3>
       </div>
-
+<i class="fab fa-github"></i>
       
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="cmn-section" id="about">
       <v-container class="inner my_introduction white--text">
           <h2 class="cmn-title text-center">
-              <span class="title">About Me</span>
+              <span class="title text-h4">About Me</span>
           </h2>
 
           <div class="profile_image rounded-circle text-center">
