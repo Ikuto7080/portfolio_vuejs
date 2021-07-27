@@ -2,9 +2,9 @@
   <div id="App">
     <v-app id="inspire">
       <Header id="header"></Header>
-      <v-content>
+      <v-main>
         <router-view />
-      </v-content>
+      </v-main>
     </v-app>
   </div>
 </template>
