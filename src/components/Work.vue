@@ -27,7 +27,13 @@
                       <v-spacer></v-spacer>
 
                       <v-btn icon
-                      :href="card.src"
+                      :href="card.src_home"
+                      >
+                        <i class="fas fa-home fa-3x"></i>
+                      </v-btn>
+                      <v-btn icon
+                      :href="card.src_git"
+                      class="ml-4"
                       >
                         <i class="fab fa-github fa-3x"></i>
                       </v-btn>
@@ -46,8 +52,8 @@ export default {
   data(){
     return {
       cards: [
-        {title: "About Me", image: require("@/assets/portfolio.png"),src: "/", flex: 6},
-        {title: "Works", image: require("@/assets/gokurakutei.png"), src: "/", flex: 6},
+        {title: "About Me", image: require("@/assets/portfolio.png"),src_home: "https://ikuto7080.github.io/portfolio_vuejs/", src_git: "https://github.com/Ikuto7080/portfolio_vuejs", flex: 6},
+        {title: "Works", image: require("@/assets/gokurakutei.png"), src_home: "http://server-for-exercise.com/", src_git: "https://github.com/Ikuto7080/portfolio_wp", flex: 6},
       ]
     }
   }
