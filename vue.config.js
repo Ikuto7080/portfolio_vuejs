@@ -4,5 +4,5 @@ module.exports = {
   ],
   outputDir: 'docs',
   assetsDir: './',
-  publicPath: '/portofolio/'
+  publicPath: '/portfolio_vuejs/'
 }
