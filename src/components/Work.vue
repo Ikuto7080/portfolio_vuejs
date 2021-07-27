@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="works">
       <div class="cmn-section" id="about">
           <div class="inner my_works">
             <v-container fluid>

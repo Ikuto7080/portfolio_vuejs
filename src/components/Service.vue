@@ -1,5 +1,5 @@
 <template>
-  <div class="service">
+  <div id="service">
       <v-container fluid>
           <div class="inner text-center" >
               <div class="service-title">
@@ -22,6 +22,7 @@
                       </div>
                   </v-col>
               </v-row>
+                  <div class="white--text text-h6 py-4">※正式なお見積もりは、別途相談させていただきます。</div>
           </div>
       </v-container>
   </div>

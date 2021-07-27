@@ -10,10 +10,10 @@
                 contain
                 ></v-img>
                 <v-spacer></v-spacer>
-                <a href="#" class="px-2">About Me</a>
-                <a href="#" class="px-2">Service</a>
-                <a href="#" class="px-2">Works</a>
-                <a href="#" class="px-2">Contact</a>
+                <a href="#about-me" class="px-2" v-smooth-scroll>About Me</a>
+                <a href="#skill" class="px-2" v-smooth-scroll>Skill</a>
+                <a href="#service" class="px-2" v-smooth-scroll>Service</a>
+                <a href="#works" class="px-2" v-smooth-scroll>Works</a>
             </v-app-bar>
         </div>
     </div>
@@ -22,7 +22,6 @@
 <script>
 export default {
     methods: {
-
     }
 }
 </script>

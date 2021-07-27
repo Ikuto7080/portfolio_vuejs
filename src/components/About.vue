@@ -1,5 +1,5 @@
 <template>
-  <div class="cmn-section" id="about">
+  <div class="cmn-section" id="about-me">
       <v-container class="inner my_introduction white--text">
           <h2 class="cmn-title text-center">
               <span class="title text-h4">About Me</span>
