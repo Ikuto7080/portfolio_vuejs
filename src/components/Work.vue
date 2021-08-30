@@ -54,7 +54,7 @@ export default {
         {title: "About Me", image: require("@/assets/portfolio.png"),src_home: "https://ikuto7080.github.io/portfolio_vuejs/", src_git: "https://github.com/Ikuto7080/portfolio_vuejs", flex: 6},
         {title: "Works", image: require("@/assets/gokurakutei.png"), src_home: "https://server-for-exercise.com/", src_git: "https://github.com/Ikuto7080/portfolio_wp", flex: 6},
         {title: "Works", image: require("@/assets/toefl-site.png"), src_home: "https://toefl.server-for-exercise.com/", src_git: "https://github.com/Ikuto7080/toefl-site", flex: 6},
-        {title: "Works", image: require("@/assets/company-site.png"), src_home: "http://ikutochan.html.xdomain.jp/company-site/", src_git: "https://github.com/Ikuto7080/company-site", flex: 6},
+        // {title: "Works", image: require("@/assets/company-site.png"), src_home: "http://ikutochan.html.xdomain.jp/company-site/", src_git: "https://github.com/Ikuto7080/company-site", flex: 6},
       ]
     }
   }
